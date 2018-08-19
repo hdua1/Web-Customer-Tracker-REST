@@ -22,4 +22,11 @@ public class CustomerRestController {
 		
 		return customerService.getCustomers();	
 	}
+
+	@GetMapping("/customers")
+	public List<Customer> getCustomers() {
+		
+		return customerService.getCustomers();
+		
+	}
 }
